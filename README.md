@@ -1,108 +1,111 @@
-🌌 Star Wars Character App — Frontend Take-Home Assignment
+# 🌌 Star Wars Character App — Frontend Take-Home Assignment
 
-This project is my solution to the Frontend Take-Home Assignment, focusing on building a responsive, interactive UI using modern frontend tools. The app fetches and displays Star Wars characters from the SWAPI API, supports search, modals, pagination, and more.
+This is my solution to the Frontend Take-Home Assignment.  
+A fully responsive React application that fetches Star Wars characters from SWAPI and displays them with search, pagination, and detailed modals.
 
-🚀 Tech Stack Used
+---
 
-React (Functional Components + Hooks)
+## 🚀 Tech Stack Used
+- **React (Functional Components + Hooks)**
+- **Tailwind CSS**
+- **JavaScript (ES6)**
+- **Axios**
+- **React Router**
+- **React Testing Library (structure only)**
 
-Tailwind CSS
+---
 
-JavaScript (ES6)
-
-Axios for API calls
-
-React Router
-
-React Testing Library (structure prepared)
-
-⭐ Project Overview
+## ⭐ Project Overview
 
 A responsive Star Wars Characters Application that:
 
-✔ Fetches all characters from SWAPI
-✔ Displays them in dynamic character cards
-✔ Allows searching, filtering, and pagination
-✔ Shows a modal with expanded character details
-✔ Includes simple mocked login/logout
-✔ Works smoothly across all screen sizes
+- ✔ Fetches all characters from SWAPI  
+- ✔ Displays them in dynamic character cards  
+- ✔ Allows searching, filtering, and pagination  
+- ✔ Shows expanded details in a modal  
+- ✔ Provides mocked login/logout  
+- ✔ Works smoothly across all screen sizes  
 
-🎯 Features Implemented
-✅ 1. Fetch & Display Characters
+---
 
-Integrated /people endpoint from SWAPI
+## 🎯 Features Implemented
 
-Combined all pages of the API into a unified dataset
+### ✅ 1. Fetch & Display Characters
+- Fetches characters from SWAPI `/people`
+- Combined **all pages** into one dataset
+- Includes:
+  - Loading state  
+  - Error handling  
+  - Pagination  
 
-Included:
+---
 
-Loading state
+### ✅ 2. Character Cards
+Each card displays:
+- Character name  
+- Random image (Picsum)  
+- **Colored background based on species type**  
+- Smooth hover animations  
+- Responsive layout  
 
-Error handling
+Clicking a card opens a modal with detailed info.
 
-Pagination support
+---
 
-✅ 2. Character Cards
+### ✅ 3. Character Details Modal
+Shows:
+- Name  
+- Height (meters)  
+- Mass (kg)  
+- Birth year  
+- Number of films  
+- Added date (formatted `dd-MM-yyyy`)  
 
-Each card includes:
+**Homeworld Info:**
+- Name  
+- Terrain  
+- Climate  
+- Population  
 
-Character Name
+---
 
-Random Image (via Picsum)
+### ✅ 4. Searching (Bonus)
+- Instant search (no Enter key needed)  
+- Searches across:
+  - Name  
+  - Films  
+  - Homeworld  
+  - Species  
+- Case-insensitive  
+- Filters entire dataset  
 
-Colored background based on species type
+---
 
-Smooth hover animations & responsive design
+## ⚙️ Additional Enhancements (Bonus)
+- ✔ Combined search logic  
+- ✔ Smooth UI animations  
+- ✔ Dynamic placeholder text (rotates every 3 seconds)  
+- ✔ Mocked Authentication (Login + Logout)  
+- ✔ Persistent session via `localStorage`  
+- ✔ Ready folder structure for testing  
 
-Click → Opens a modal with detailed info
+---
+## 🔐 Credentials (Mock Authentication)
+Use these credentials when logging in:
+- username admin 
+- password 1234
 
-✅ 3. Character Details Modal
+## How to run the project
+✔ npm install 
 
-The modal displays:
+✔ npm start  
 
-Name (Header)
+## 📌 Submission Includes
 
-Height (converted to meters)
+-Complete source code
 
-Mass (kg)
+-README documentation
 
-Birth year
+-Required + bonus features
 
-Number of films
 
-Date added (formatted dd-MM-yyyy)
-
-Homeworld details:
-
-Name
-
-Terrain
-
-Climate
-
-Population
-
-✅ 4. Searching (Bonus Implemented)
-
-Live search as you type
-
-Partial case-insensitive matching
-
-Searches across:
-
-Name
-
-Films
-
-Species
-
-Homeworld
-
-⚙️ Additional Enhancements (Bonus)
-
-✔ Combined search logic
-✔ Clean UI animations
-✔ Dynamic placeholder that rotates every 3 seconds
-✔ Mocked Authentication (Login + Logout)
-✔ User stays logged in via localStorage
-✔ Ready structure for integration testing
