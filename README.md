@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+🌌 Star Wars Character App — Frontend Take-Home Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is my solution to the Frontend Take-Home Assignment, focusing on building a responsive, interactive UI using modern frontend tools. The app fetches and displays Star Wars characters from the SWAPI API, supports search, modals, pagination, and more.
 
-## Available Scripts
+🚀 Tech Stack Used
 
-In the project directory, you can run:
+React (Functional Components + Hooks)
 
-### `npm start`
+Tailwind CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+JavaScript (ES6)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Axios for API calls
 
-### `npm test`
+React Router
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React Testing Library (structure prepared)
 
-### `npm run build`
+⭐ Project Overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A responsive Star Wars Characters Application that:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+✔ Fetches all characters from SWAPI
+✔ Displays them in dynamic character cards
+✔ Allows searching, filtering, and pagination
+✔ Shows a modal with expanded character details
+✔ Includes simple mocked login/logout
+✔ Works smoothly across all screen sizes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🎯 Features Implemented
+✅ 1. Fetch & Display Characters
 
-### `npm run eject`
+Integrated /people endpoint from SWAPI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Combined all pages of the API into a unified dataset
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Included:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Loading state
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Error handling
 
-## Learn More
+Pagination support
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+✅ 2. Character Cards
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Each card includes:
 
-### Code Splitting
+Character Name
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Random Image (via Picsum)
 
-### Analyzing the Bundle Size
+Colored background based on species type
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Smooth hover animations & responsive design
 
-### Making a Progressive Web App
+Click → Opens a modal with detailed info
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+✅ 3. Character Details Modal
 
-### Advanced Configuration
+The modal displays:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Name (Header)
 
-### Deployment
+Height (converted to meters)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Mass (kg)
 
-### `npm run build` fails to minify
+Birth year
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Number of films
+
+Date added (formatted dd-MM-yyyy)
+
+Homeworld details:
+
+Name
+
+Terrain
+
+Climate
+
+Population
+
+✅ 4. Searching (Bonus Implemented)
+
+Live search as you type
+
+Partial case-insensitive matching
+
+Searches across:
+
+Name
+
+Films
+
+Species
+
+Homeworld
+
+⚙️ Additional Enhancements (Bonus)
+
+✔ Combined search logic
+✔ Clean UI animations
+✔ Dynamic placeholder that rotates every 3 seconds
+✔ Mocked Authentication (Login + Logout)
+✔ User stays logged in via localStorage
+✔ Ready structure for integration testing
