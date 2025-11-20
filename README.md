@@ -1,5 +1,5 @@
 # 🌌 Star Wars Character App — Frontend Take-Home Assignment
-
+Made by RamkiPooja
 This is my solution to the Frontend Take-Home Assignment.  
 A fully responsive React application that fetches Star Wars characters from SWAPI and displays them with search, pagination, and detailed modals.
 
